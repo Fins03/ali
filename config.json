@@ -15,7 +15,7 @@
     "name": "alisql",
     "db_file": "data/data.db",
     "table_prefix": "alist_",
-    "ssl_mode": "preferred"
+    "ssl_mode": ""
   },
   "scheme": {
     "https": false,
