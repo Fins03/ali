@@ -7,7 +7,7 @@
   "site_url": "",
   "cdn": "",
   "database": {
-    "type": "mysql",
+    "type": "postgres",
     "host": "",
     "port": 0,
     "user": "",
@@ -34,5 +34,8 @@
     "max_backups": 5,
     "max_age": 28,
     "compress": false
-  }
+  },
+  "max_connections": 0,
+  "tls_insecure_skip_verify": false
+}
 }
