@@ -17,6 +17,10 @@
     "table_prefix": "",
     "ssl_mode": ""
   },
+  "cache": {
+    "expiration": 60,
+    "cleanup_interval": 120
+  },
   "scheme": {
     "https": false,
     "cert_file": "",
@@ -30,9 +34,5 @@
     "max_backups": 5,
     "max_age": 28,
     "compress": false
-  },
-  "cache": {
-    "expiration": 120,
-    "cleanup_interval": 60
   }
 }
