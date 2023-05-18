@@ -5,17 +5,17 @@
   "jwt_secret": "random generated",
   "token_expires_in": 48,
   "site_url": "",
-  "cdn": "https://cdn.jsdelivr.net/npm/alist-web@$version/dist/",
+  "cdn": "",
   "database": {
-    "type": "mysql",
+    "type": "postgres",
     "host": "",
-    "port": 3306,
+    "port": 0,
     "user": "",
     "password": "",
     "name": "",
     "db_file": "data/data.db",
     "table_prefix": "",
-    "ssl_mode": "preferred"
+    "ssl_mode": ""
   },
   "cache": {
     "expiration": 60,
