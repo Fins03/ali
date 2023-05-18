@@ -7,15 +7,15 @@
   "site_url": "",
   "cdn": "",
   "database": {
-    "type": "postgres",
+    "type": "mysql",
     "host": "",
-    "port": 0,
+    "port": 3306,
     "user": "",
     "password": "",
     "name": "",
     "db_file": "data/data.db",
     "table_prefix": "",
-    "ssl_mode": ""
+    "ssl_mode": "preferred"
   },
   "cache": {
     "expiration": 60,
