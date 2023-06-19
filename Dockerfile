@@ -1,4 +1,5 @@
-FROM ubuntu
+FROM nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04
+ENV DEBIAN_FRONTEND noninteractive
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
 VOLUME /opt/alist/data/
