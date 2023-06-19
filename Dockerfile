@@ -1,7 +1,7 @@
 FROM debian
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
-ADD config.json /opt/alist/data/
+COPY config.json /opt/alist/data/
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y sudo 
 #&& apt-get install -y python3-pip && pip3 install --upgrade pip
 RUN apt install -y curl wget sudo tar git
@@ -19,6 +19,6 @@ RUN chmod a+x my.sh
 #RUN chown -R admin:admin /home
 #RUN chmod -R 777 /home
 #USER admin
-EXPOSE 5244
+EXPOSE 5244/tcp
 #RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
 CMD ["./my.sh"]
