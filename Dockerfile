@@ -9,7 +9,7 @@ RUN apt install -y curl wget sudo tar git
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
 RUN wget https://github.moeyy.xyz/https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-musl-amd64.tar.gz
 RUN tar xf alist-linux-musl-amd64.tar.gz
-ADD *.sh .
+COPY *.sh .
 RUN chmod a+x my.sh
 #RUN adduser --disabled-password --gecos '' admin
 #RUN adduser admin sudo
