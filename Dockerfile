@@ -1,5 +1,4 @@
-RUN rm -rf *
-FROM debian
+FROM ubuntu
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
 VOLUME /opt/alist/data/
