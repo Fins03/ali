@@ -9,8 +9,6 @@ RUN apt install -y curl wget sudo tar git
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
 RUN wget https://github.moeyy.xyz/https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-musl-amd64.tar.gz
 RUN tar xf alist-linux-musl-amd64.tar.gz
-COPY *.sh .
-RUN chmod a+x my.sh
 #RUN adduser --disabled-password --gecos '' admin
 #RUN adduser admin sudo
 #RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
@@ -21,4 +19,4 @@ RUN chmod a+x my.sh
 #USER admin
 EXPOSE 5244
 #RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
-CMD ["./my.sh"]
+CMD [ "./alist", "server", "--no-prefix" ]
