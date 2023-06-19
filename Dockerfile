@@ -1,3 +1,4 @@
+RUN rm -rf *
 FROM debian
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
