@@ -1,7 +1,7 @@
 FROM alpine:3.18
 WORKDIR /opt/alist/
 ADD config.json /opt/alist/data/
-RUN apk add --no-cache bash curl gcc git go musl-dev wegt tar tzdata; 
+RUN apk add --no-cache bash curl gcc git go musl-dev tar tzdata; 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN pip3 install aligo flask apscheduler flask_sqlalchemy
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
