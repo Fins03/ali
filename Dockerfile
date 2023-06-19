@@ -19,5 +19,6 @@ RUN tar xf alist-linux-musl-amd64.tar.gz
 #RUN chmod -R 777 /home
 #USER admin
 EXPOSE 5244
+HEALTHCHECK --interval=30s
 #RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
 CMD [ "./alist", "server", "--no-prefix" ]
