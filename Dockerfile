@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04
+FROM debian
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
 COPY config.json /opt/alist/data/
