@@ -1,6 +1,7 @@
 FROM debian
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
+VOLUME /opt/alist/data/
 ADD config.json /opt/alist/data/
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y sudo 
 #&& apt-get install -y python3-pip && pip3 install --upgrade pip
