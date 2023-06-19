@@ -8,8 +8,8 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get install -y sudo
 RUN apt install -y curl wget sudo tar git
 #RUN pip3 install aligo flask apscheduler flask_sqlalchemy
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
-RUN wget https://github.moeyy.xyz/https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-musl-amd64.tar.gz
-RUN tar xf alist-linux-musl-amd64.tar.gz
+RUN wget https://github.moeyy.xyz/https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-amd64.tar.gz
+RUN tar xf alist-linux-amd64.tar.gz
 #RUN adduser --disabled-password --gecos '' admin
 #RUN adduser admin sudo
 #RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
@@ -19,6 +19,5 @@ RUN tar xf alist-linux-musl-amd64.tar.gz
 #RUN chmod -R 777 /home
 #USER admin
 EXPOSE 5244
-HEALTHCHECK none
 #RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
 CMD [ "./alist", "server", "--no-prefix" ]
