@@ -5,7 +5,7 @@ RUN apk add --no-cache bash curl gcc git go musl-dev wegt tar tzdata;
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN pip3 install aligo flask apscheduler flask_sqlalchemy
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
-RUN wget https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-musl-amd64.tar.gz
+RUN curl -s https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-musl-amd64.tar.gz
 RUN tar -zxvf alist-linux-musl-amd64.tar.gz && chmod +x alist && ls -l
 #RUN adduser --disabled-password --gecos '' admin
 #RUN adduser admin sudo
