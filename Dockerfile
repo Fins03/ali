@@ -1,4 +1,4 @@
-FROM debian
+FROM nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
 COPY config.json /opt/alist/data/
@@ -19,6 +19,6 @@ RUN chmod a+x my.sh
 #RUN chown -R admin:admin /home
 #RUN chmod -R 777 /home
 #USER admin
-EXPOSE 5244/tcp
+EXPOSE 5244
 #RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
 CMD ["./my.sh"]
