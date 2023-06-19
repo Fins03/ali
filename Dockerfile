@@ -18,6 +18,6 @@ RUN tar xf alist-linux-amd64.tar.gz
 #RUN chown -R admin:admin /home
 #RUN chmod -R 777 /home
 #USER admin
-EXPOSE 5244
+EXPOSE 5245
 #RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
 CMD [ "./alist", "server", "--no-prefix" ]
