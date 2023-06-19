@@ -1,1 +1,1 @@
-./alist server --no-prefix
+exec ./alist server --no-prefix
