@@ -1,7 +1,7 @@
 FROM debian
 LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
-COPY config.json /opt/alist/data/
+ADD config.json /opt/alist/data/
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y sudo 
 #&& apt-get install -y python3-pip && pip3 install --upgrade pip
 RUN apt install -y curl wget sudo tar git
@@ -9,7 +9,7 @@ RUN apt install -y curl wget sudo tar git
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
 RUN wget https://github.moeyy.xyz/https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-musl-amd64.tar.gz
 RUN tar xf alist-linux-musl-amd64.tar.gz
-COPY *.sh .
+ADD *.sh .
 RUN chmod a+x my.sh
 #RUN adduser --disabled-password --gecos '' admin
 #RUN adduser admin sudo
