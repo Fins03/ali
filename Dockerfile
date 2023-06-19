@@ -1,5 +1,4 @@
 FROM debian
-LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
 ADD config.json /opt/alist/data/
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y sudo 
@@ -8,7 +7,7 @@ RUN apt install -y curl wget sudo tar tzdata
 RUN sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN pip3 install aligo flask apscheduler flask_sqlalchemy
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
-RUN wget https://github.moeyy.xyz/https://github.com/alist-org/alist/releases/download/v3.18.0/alist-linux-musl-amd64.tar.gz
+RUN wget https://github.com/alist-org/alist/releases/download/v3.19.0/alist-linux-musl-amd64.tar.gz
 RUN tar xf alist-linux-musl-amd64.tar.gz
 #RUN adduser --disabled-password --gecos '' admin
 #RUN adduser admin sudo
